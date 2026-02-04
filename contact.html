@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Our Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Mobile menu toggle */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-blue-800 text-white py-3 px-4 text-sm">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
+      <div><i class="fas fa-clock mr-2"></i>Sunday Services: 9am & 11am</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://i.etsystatic.com/19543171/r/il/2ff2cc/5634035219/il_fullxfull.5634035219_lsqc.jpg" alt="Church Logo" class="w-12 h-12 mr-3 object-contain">
+        <h1 class="text-2xl font-bold text-blue-800">Our Church</h1>
+      </div>
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-8 items-center">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About Us</a>
+        <a href="churches.html" class="hover:text-blue-600">Churches</a>
+        <a href="leadership.html" class="hover:text-blue-600">Leadership</a>
+        <a href="sermons.html" class="hover:text-blue-600">Preaching Points</a>
+        <a href="projects.html" class="hover:text-blue-600">Projects</a>
+        <a href="events.html" class="hover:text-blue-600">Events</a>
+        <a href="give.html" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600 font-semibold">Give</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="lg:hidden text-blue-800">
+        <i class="fas fa-bars text-3xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
+      <nav class="px-6 py-6 space-y-4">
+        <a href="index.html" class="block text-lg hover:text-blue-600">Home</a>
+        <a href="about.html" class="block text-lg hover:text-blue-600">About Us</a>
+        <a href="churches.html" class="block text-lg hover:text-blue-600">Churches</a>
+        <a href="leadership.html" class="block text-lg hover:text-blue-600">Leadership</a>
+        <a href="sermons.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
+        <a href="projects.html" class="block text-lg hover:text-blue-600">Projects</a>
+        <a href="events.html" class="block text-lg hover:text-blue-600">Events</a>
+        <a href="give.html" class="block bg-yellow-500 text-white px-6 py-4 rounded-full text-center hover:bg-yellow-600 font-semibold">Give</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-96 md:min-h-screen bg-cover bg-center flex items-center" style="background-image: url('https://images.pexels.com/photos/19058725/pexels-photo-19058725/free-photo-of-silhouette-of-cathedral-during-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+    <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
+    <div class="relative container mx-auto px-6 text-center text-white">
+      <h2 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-4">Contact Us</h2>
+      <p class="text-xl sm:text-2xl md:text-3xl max-w-4xl mx-auto">Get in touch with Our Church. We'd love to hear from you!</p>
+    </div>
+  </section>
+
+  <!-- Contact Info & Form + Map -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <!-- Contact Details -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-16 text-center lg:text-left">
+        <div class="flex flex-col items-center lg:items-start">
+          <i class="fas fa-phone text-4xl text-blue-800 mb-4"></i>
+          <p class="text-2xl font-bold">(123) 456-7890</p>
+          <p class="text-gray-600">(123) 456-7890</p>
+        </div>
+        <div class="flex flex-col items-center lg:items-start">
+          <i class="fas fa-envelope text-4xl text-blue-800 mb-4"></i>
+          <p class="text-2xl font-bold"><a href="mailto:info@ourchurch.org" class="hover:underline">Email Us</a></p>
+          <p class="text-gray-600">info@ourchurch.org</p>
+        </div>
+        <div class="flex flex-col items-center lg:items-start">
+          <i class="fas fa-map-marker-alt text-4xl text-blue-800 mb-4"></i>
+          <p class="text-2xl font-bold">123 Church St, City, State 12345</p>
+        </div>
+      </div>
+
+      <!-- Form + Map Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+        <!-- Form -->
+        <div>
+          <h3 class="text-3xl font-bold text-blue-800 mb-8">Send a Message</h3>
+          <form class="space-y-6">
+            <input type="text" placeholder="Name" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 text-lg">
+            <input type="email" placeholder="Email" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 text-lg">
+            <textarea placeholder="Message" rows="8" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 text-lg"></textarea>
+            <button type="submit" class="w-full bg-blue-800 text-white py-4 rounded-lg hover:bg-blue-900 font-bold text-xl">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Map -->
+        <div class="order-first lg:order-last">
+          <div class="relative h-96 lg:h-full bg-gray-200 rounded-xl overflow-hidden shadow-lg">
+            <!-- Google Maps Embed (replace with your real address coordinates) -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397329251!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=123+Church+St%2C+City%2C+State+12345" target="_blank" class="inline-flex items-center mt-6 text-blue-600 font-bold text-lg hover:underline">
+            <i class="fas fa-directions mr-3"></i>Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg">&copy; 2026 Our Church. All rights reserved.</p>
+      <p class="mt-4">123 Church St, City, State 12345 | (123) 456-7890 | info@ourchurch.org</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Desktop dropdown on hover */
+    .desktop-dropdown:hover .desktop-dropdown-menu {
+      display: block;
+    }
+    /* Video play icon overlay */
+    .video-overlay {
+      position: relative;
+    }
+    .video-overlay::before {
+      content: '\f04b';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      color: white;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://img.freepik.com/free-vector/church-logo-design-template_1195-157.jpg" alt="Church Logo" class="w-12 h-12 mr-3 object-contain">
+        <h1 class="text-2xl font-bold text-blue-800">Our Church</h1>
+      </div>
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-8 items-center">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">About Us</a>
+        <a href="#" class="hover:text-blue-600">Churches</a>
+        <div class="relative desktop-dropdown">
+          <a href="#" class="hover:text-blue-600 flex items-center">Ministries <i class="fas fa-chevron-down ml-2 text-xs"></i></a>
+          <div class="desktop-dropdown-menu absolute hidden bg-white shadow-lg mt-4 py-3 w-56 rounded-lg">
+            <a href="#" class="block px-6 py-2 hover:bg-gray-100">Health Ministry</a>
+            <a href="#" class="block px-6 py-2 hover:bg-gray-100">Women Ministry</a>
+            <a href="#" class="block px-6 py-2 hover:bg-gray-100">Education Ministry</a>
+            <a href="#" class="block px-6 py-2 hover:bg-gray-100">Youth Ministry</a>
+          </div>
+        </div>
+        <a href="#" class="hover:text-blue-600">Leadership</a>
+        <a href="#" class="hover:text-blue-600">Projects</a>
+        <a href="#" class="hover:text-blue-600">Events</a>
+        <a href="#" class="hover:text-blue-600">Sermons</a>
+        <a href="#" class="hover:text-blue-600">Blog</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="lg:hidden text-blue-800">
+        <i class="fas fa-bars text-3xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
+      <nav class="px-6 py-6 space-y-4">
+        <a href="#" class="block text-lg hover:text-blue-600">Home</a>
+        <a href="#" class="block text-lg hover:text-blue-600">About Us</a>
+        <a href="#" class="block text-lg hover:text-blue-600">Churches</a>
+        <div>
+          <button id="mobile-ministries-toggle" class="flex justify-between w-full text-lg hover:text-blue-600 py-2">
+            Ministries <i class="fas fa-chevron-down transition-transform" id="mobile-ministries-chevron"></i>
+          </button>
+          <div id="mobile-ministries-submenu" class="hidden pl-6 space-y-2 mt-2">
+            <a href="#" class="block hover:text-blue-600">Health Ministry</a>
+            <a href="#" class="block hover:text-blue-600">Women Ministry</a>
+            <a href="#" class="block hover:text-blue-600">Education Ministry</a>
+            <a href="#" class="block hover:text-blue-600">Youth Ministry</a>
+          </div>
+        </div>
+        <a href="#" class="block text-lg hover:text-blue-600">Leadership</a>
+        <a href="#" class="block text-lg hover:text-blue-600">Projects</a>
+        <a href="#" class="block text-lg hover:text-blue-600">Events</a>
+        <a href="#" class="block text-lg hover:text-blue-600">Sermons</a>
+        <a href="#" class="block text-lg hover:text-blue-600">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen bg-cover bg-center flex items-center" style="background-image: url('https://as1.ftcdn.net/v2/jpg/02/66/97/00/1000_F_266970002_TWl2r2SKMN7zikCnxV5GxayZo2LLCUiV.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-70"></div>
+    <div class="relative container mx-auto px-6 text-center text-white">
+      <h2 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-4">Welcome to Our Church</h2>
+      <p class="text-xl sm:text-3xl md:text-4xl mb-12">Empowering for Christian Ministry</p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <a href="#" class="w-full sm:w-auto bg-blue-800 text-white px-10 py-5 rounded-lg hover:bg-blue-900 font-semibold text-lg">Visit Us</a>
+        <a href="#" class="w-full sm:w-auto bg-green-600 text-white px-10 py-5 rounded-lg hover:bg-green-700 font-semibold text-lg">Watch Now</a>
+        <a href="#" class="w-full sm:w-auto bg-blue-700 text-white px-10 py-5 rounded-lg hover:bg-blue-800 font-semibold text-lg flex items-center justify-center"><i class="fas fa-play mr-3"></i> Latest Sermon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Grid -->
+  <section class="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <!-- Latest Sermon -->
+    <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+      <h3 class="text-2xl font-bold text-center py-6 bg-gray-100">Latest Sermon</h3>
+      <div class="video-overlay h-64 bg-cover bg-center" style="background-image: url('https://media.istockphoto.com/id/1371387288/video/mystical-dark-hall-of-castle.jpg');"></div>
+      <div class="p-8 text-center">
+        <h4 class="text-xl font-bold">The Power of Faith</h4>
+        <p class="text-gray-600 mt-2">April 21, 2024</p>
+        <a href="#" class="inline-block mt-6 bg-blue-800 text-white px-8 py-3 rounded-lg hover:bg-blue-900">Watch Now</a>
+      </div>
+    </div>
+
+    <!-- Upcoming Events -->
+    <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+      <h3 class="text-2xl font-bold text-center py-6 bg-gray-100">Upcoming Events</h3>
+      <div class="p-8">
+        <!-- Mobile-friendly event list (primary on small screens) -->
+        <div class="space-y-6 md:hidden">
+          <div class="border-b pb-4">
+            <p class="font-semibold flex items-center"><i class="fas fa-calendar-alt text-green-600 mr-3"></i> Community Outreach</p>
+            <p class="text-gray-600 text-sm">April 25, 2024</p>
+          </div>
+          <!-- Add more events -->
+        </div>
+        <!-- Desktop calendar view -->
+        <div class="hidden md:block">
+          <div class="grid grid-cols-7 text-center text-sm mb-6 gap-2">
+            <div class="font-bold">S</div><div class="font-bold">M</div><div class="font-bold">T</div><div class="font-bold">W</div><div class="font-bold">T</div><div class="font-bold">F</div><div class="font-bold">S</div>
+            <!-- Simplified April 2024 example -->
+            <div class="text-gray-400">31</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+            <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+            <div>14</div><div>15</div><div>16</div><div class="bg-blue-200 rounded-full">17</div><div>18</div><div>19</div><div>20</div>
+            <!-- etc. -->
+          </div>
+          <div class="border-t pt-6">
+            <p class="font-semibold flex items-center justify-center"><i class="fas fa-calendar-alt text-green-600 mr-3"></i> Community Outreach</p>
+            <p class="text-gray-600 text-center">April 25, 2024</p>
+          </div>
+        </div>
+        <a href="#" class="block text-center mt-8 text-blue-600 font-semibold hover:underline">View All Events</a>
+      </div>
+    </div>
+
+    <!-- Get Involved -->
+    <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+      <h3 class="text-2xl font-bold text-center py-6 bg-gray-100">Get Involved</h3>
+      <div class="grid grid-cols-3 gap-4 p-8">
+        <div class="bg-green-100 rounded-lg p-4 text-center"><i class="fas fa-heart text-4xl text-green-600"></i><p class="mt-3 font-semibold text-sm">Health Ministry</p></div>
+        <div class="bg-blue-100 rounded-lg p-4 text-center"><i class="fas fa-female text-4xl text-blue-600"></i><p class="mt-3 font-semibold text-sm">Women Ministry</p></div>
+        <div class="bg-red-100 rounded-lg p-4 text-center"><i class="fas fa-book text-4xl text-red-600"></i><p class="mt-3 font-semibold text-sm">Education Ministry</p></div>
+      </div>
+      <ul class="px-8 space-y-4 pb-8">
+        <li class="flex items-center text-lg"><i class="fas fa-check text-blue-600 mr-4"></i> Volunteer Opportunities</li>
+        <li class="flex items-center text-lg"><i class="fas fa-check text-blue-600 mr-4"></i> Become a Member</li>
+        <li class="flex items-center text-lg"><i class="fas fa-check text-blue-600 mr-4"></i> Support Our Mission</li>
+      </ul>
+      <div class="text-center pb-8">
+        <a href="#" class="bg-green-600 text-white px-10 py-4 rounded-lg hover:bg-green-700 font-semibold">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Ministries -->
+  <section class="py-20 bg-gradient-to-b from-gray-100 to-gray-200">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Ministries</h2>
+      <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">Explore our ministries and find a place to grow and serve.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="bg-blue-600 text-white rounded-2xl p-12 shadow-xl">
+          <i class="fas fa-heartbeat text-6xl mb-6"></i>
+          <h3 class="text-3xl font-bold">Health Ministry</h3>
+        </div>
+        <div class="bg-green-600 text-white rounded-2xl p-12 shadow-xl">
+          <i class="fas fa-female text-6xl mb-6"></i>
+          <h3 class="text-3xl font-bold">Women Ministry</h3>
+        </div>
+        <div class="bg-yellow-500 text-white rounded-2xl p-12 shadow-xl">
+          <i class="fas fa-graduation-cap text-6xl mb-6"></i>
+          <h3 class="text-3xl font-bold">Education Ministry</h3>
+        </div>
+        <div class="bg-red-600 text-white rounded-2xl p-12 shadow-xl">
+          <i class="fas fa-users text-6xl mb-6"></i>
+          <h3 class="text-3xl font-bold">Youth Ministry</h3>
+        </div>
+      </div>
+      <a href="#" class="inline-block mt-12 bg-blue-800 text-white px-12 py-5 rounded-lg hover:bg-blue-900 text-2xl font-semibold">View All Ministries</a>
+    </div>
+  </section>
+
+  <!-- Latest News & Partners -->
+  <section class="py-20 container mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div>
+        <h2 class="text-4xl font-bold mb-8">Latest News</h2>
+        <p class="text-gray-600 mb-4">April 13, 2024</p>
+        <p class="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Latest news and updates from our community.</p>
+        <a href="#" class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700">View All News</a>
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold mb-8">Our Partners</h2>
+        <p class="text-lg text-gray-700 mb-8">We are proud to partner with these organizations.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <img src="https://thumbs.dreamstime.com/b/sunset-view-orthodox-church-hillside-warm-scenic-landscape-breathtaking-view-orthodox-church-sunset-351732254.jpg" alt="Partner Church" class="rounded-lg shadow-lg w-full object-cover h-64">
+          <img src="https://as1.ftcdn.net/jpg/02/66/97/00/1000_F_266970002_TWl2r2SKMN7zikCnxV5GxayZo2LLCUiV.jpg" alt="Partner Church" class="rounded-lg shadow-lg w-full object-cover h-64">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Word from President -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center max-w-5xl">
+      <h2 class="text-4xl font-bold mb-12">A Word from Our President</h2>
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <img src="https://dg.imgix.net/explain-your-title-pastor-emeritus-kfr9av77-en/landscape/explain-your-title-pastor-emeritus-kfr9av77-77e906721c76c32b491bb2eff12ed26a.jpg" alt="Pastor John Smith" class="w-64 h-64 rounded-full shadow-2xl object-cover flex-shrink-0">
+        <div class="text-left">
+          <p class="text-2xl italic text-gray-700 mb-8">"It's my joy and privilege to welcome you to our church family. Here, we strive to be a community dedicated to spreading God's love and serving others. We pray that you'll find hope, fellowship, and a deeper connection to Christ as you join us in worship and service."</p>
+          <p class="text-xl font-bold">Pastor John Smith, President</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg">&copy; 2026 Our Church. All rights reserved.</p>
+      <p class="mt-4">123 Church Street, City, State | (123) 456-7890 | info@ourchurch.org</p>
+    </div>
+  </footer>
+
+  <script>
+    // Main mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Mobile Ministries submenu toggle
+    document.getElementById('mobile-ministries-toggle').addEventListener('click', () => {
+      const submenu = document.getElementById('mobile-ministries-submenu');
+      const chevron = document.getElementById('mobile-ministries-chevron');
+      submenu.classList.toggle('hidden');
+      chevron.classList.toggle('rotate-180');
+    });
+  </script>
+</body>
+</html>
