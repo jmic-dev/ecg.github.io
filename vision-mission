@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision & Mission - Our Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Bar (same as above) -->
+  <div class="bg-blue-800 text-white py-3 px-4 text-sm">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
+      <div><i class="fas fa-clock mr-2"></i>Sunday Services: 9am & 11am</div>
+    </div>
+  </div>
+
+  <!-- Header (same updated header with dropdown – copy from above or previous pages) -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <!-- ... paste the full updated header code from the ministries page here ... -->
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-96 md:min-h-screen bg-cover bg-center flex items-center" style="background-image: url('https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+    <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
+    <div class="relative container mx-auto px-6 text-center text-white">
+      <h2 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-4">Vision & Mission</h2>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="grid md:grid-cols-2 gap-16">
+        <!-- Vision -->
+        <div class="bg-blue-50 rounded-2xl p-10 shadow-lg">
+          <h3 class="text-4xl font-bold text-blue-800 mb-6">Our Vision</h3>
+          <p class="text-xl leading-relaxed text-gray-700">
+            To see lives transformed by the power of Jesus Christ, families strengthened, communities renewed, and the Kingdom of God advanced through every member living as a witness to God's love and grace.
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="bg-yellow-50 rounded-2xl p-10 shadow-lg">
+          <h3 class="text-4xl font-bold text-blue-800 mb-6">Our Mission</h3>
+          <p class="text-xl leading-relaxed text-gray-700">
+            We exist to glorify God by making disciples of Jesus Christ through worship, fellowship, discipleship, service, and evangelism. We are committed to loving God with all our heart, soul, mind, and strength, and loving our neighbors as ourselves.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <p class="text-2xl italic text-gray-600 max-w-3xl mx-auto">
+          "Go therefore and make disciples of all nations..." – Matthew 28:19
+        </p>
+        <a href="events.html" class="inline-block mt-10 bg-yellow-500 text-white px-12 py-5 rounded-full hover:bg-yellow-600 font-bold text-xl shadow-lg">
+          Get Involved Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as before) -->
+  <footer class="bg-blue-800 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg">&copy; 2026 Our Church. All rights reserved.</p>
+      <p class="mt-4">123 Church St, City, State 12345 | (123) 456-7890 | info@ourchurch.org</p>
+    </div>
+  </footer>
+
+  <!-- Mobile menu scripts (same as before) -->
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    document.getElementById('mobile-about-toggle').addEventListener('click', () => {
+      const submenu = document.getElementById('mobile-about-submenu');
+      const chevron = document.getElementById('mobile-about-chevron');
+      submenu.classList.toggle('hidden');
+      chevron.classList.toggle('rotate-180');
+    });
+  </script>
+</body>
+</html>

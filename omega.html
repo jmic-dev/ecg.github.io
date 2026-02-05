@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saint John's Chapel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-blue-600 rounded"></div>
+        <span class="font-bold text-lg">CHURCH LOGO</span>
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">About Us</a>
+        <a href="#" class="hover:text-blue-600">Churches</a>
+        <a href="#" class="hover:text-blue-600">Ministries</a>
+        <a href="#" class="hover:text-blue-600">Leadership</a>
+        <a href="#" class="hover:text-blue-600">Projects</a>
+        <a href="#" class="hover:text-blue-600">Events</a>
+        <a href="#" class="hover:text-blue-600">Sermons</a>
+        <a href="#" class="hover:text-blue-600">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative">
+    <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=2000" 
+         class="w-full h-[320px] object-cover" />
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Saint John’s Chapel</h1>
+      <p class="mb-4 text-lg">123 Church Lane, Springfield, USA</p>
+      <button class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold">
+        Sundays at 9:00 AM & 11:00 AM
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-3 gap-10">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="bg-white rounded-xl shadow p-6 space-y-6 h-fit">
+      <h3 class="text-xl font-semibold">Location Information</h3>
+      <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=800" class="rounded-lg" />
+
+      <div class="text-sm space-y-2">
+        <p><strong>123 Church Lane</strong><br>Springfield, USA</p>
+        <p>🕒 Sundays at 9:00 AM & 11:00 AM</p>
+        <p>📞 123-456-7890</p>
+        <p>✉ info@churchwebsite.com</p>
+      </div>
+
+      <button class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold">
+        Get Directions
+      </button>
+    </aside>
+
+    <!-- CENTER CONTENT -->
+    <main class="lg:col-span-2 space-y-12">
+
+      <!-- WELCOME -->
+      <section class="bg-white p-8 rounded-xl shadow">
+        <h2 class="text-2xl font-bold mb-4">Welcome to Saint John’s Chapel</h2>
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div class="text-gray-600 leading-relaxed space-y-4">
+            <p>
+              Saint John’s Chapel is a vibrant and welcoming church dedicated to worshipping Christ, 
+              growing in faith, and serving our community.
+            </p>
+            <p>
+              Join us as we reflect the love of God in our daily lives through worship, fellowship, 
+              and compassionate outreach.
+            </p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1525104698733-1f7d3f7e3c5d?q=80&w=1000" class="rounded-lg shadow" />
+        </div>
+      </section>
+
+      <!-- EVENTS + MINISTRIES -->
+      <section class="grid md:grid-cols-2 gap-8">
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-4">Upcoming Events</h3>
+          <ul class="space-y-4 text-gray-600">
+            <li><strong>Community Outreach</strong><br>Helping those in need.</li>
+            <li><strong>Bible Study</strong><br>Weekly study group.</li>
+          </ul>
+          <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded">View All Events</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-4">Ministries & Programs</h3>
+          <ul class="space-y-4 text-gray-600">
+            <li>💚 Health Ministry</li>
+            <li>💜 Women Ministry</li>
+            <li>🧡 Youth Ministry</li>
+          </ul>
+          <button class="mt-6 bg-green-600 text-white px-4 py-2 rounded">View All Ministries</button>
+        </div>
+
+      </section>
+
+      <!-- PASTOR MESSAGE -->
+      <section class="bg-gray-100 p-8 rounded-xl shadow flex flex-col md:flex-row items-center gap-6">
+        <img src="https://images.unsplash.com/photo-1603415526960-f8f0f2b7c3f3?q=80&w=400" 
+             class="w-24 h-24 rounded-full object-cover" />
+        <p class="italic text-gray-700">
+          “We warmly invite you to connect with our Saint John’s Chapel family. Let’s worship together, 
+          grow in faith, and serve our community with love and compassion.”  
+          <span class="block font-semibold mt-2">— Pastor Michael Brown</span>
+        </p>
+      </section>
+
+      <!-- SERMONS -->
+      <section>
+        <h3 class="text-2xl font-bold mb-6 text-center">Recent Sermons</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800" />
+            <div class="p-4">
+              <h4 class="font-semibold">The Power of Faith</h4>
+              <p class="text-sm text-gray-500">April 27, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800" />
+            <div class="p-4">
+              <h4 class="font-semibold">Walking in God’s Light</h4>
+              <p class="text-sm text-gray-500">May 1, 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-6">
+          <button class="bg-blue-600 text-white px-6 py-3 rounded-lg">View All Sermons</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <h4 class="font-semibold text-white mb-2">Saint John’s Chapel</h4>
+        <p>123 Church Lane<br>Springfield, USA</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-2">Service Times</h4>
+        <p>Sundays: 9:00 AM & 11:00 AM</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-2">Contact</h4>
+        <p>info@churchwebsite.com<br>123-456-7890</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

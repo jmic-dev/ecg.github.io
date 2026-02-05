@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Our Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-blue-800 text-white py-3 px-4 text-sm">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
+      <div><i class="fas fa-clock mr-2"></i>Sunday Services: 9am & 11am</div>
+    </div>
+  </div>
+
+  <!-- Header with About Us Dropdown -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://i.etsystatic.com/19543171/r/il/2ff2cc/5634035219/il_fullxfull.5634035219_lsqc.jpg" alt="Church Logo" class="w-12 h-12 mr-3 object-contain">
+        <h1 class="text-2xl font-bold text-blue-800">Our Church</h1>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex space-x-8 items-center">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        
+        <!-- About Us Dropdown -->
+        <div class="relative group">
+          <button class="hover:text-blue-600 flex items-center focus:outline-none">
+            About Us <i class="fas fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
+          </button>
+          <div class="absolute left-0 mt-4 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+            <a href="about.html" class="block px-6 py-4 hover:bg-gray-100 border-b border-gray-200">Overview</a>
+            <a href="history.html" class="block px-6 py-4 hover:bg-gray-100 border-b border-gray-200">History</a>
+            <a href="vision-mission.html" class="block px-6 py-4 hover:bg-gray-100 border-b border-gray-200">Vision & Mission</a>
+            <a href="faith.html" class="block px-6 py-4 hover:bg-gray-100">Statement of Faith</a>
+          </div>
+        </div>
+        
+        <a href="churches.html" class="hover:text-blue-600">Churches</a>
+        <a href="leadership.html" class="hover:text-blue-600">Leadership</a>
+        <a href="sermons.html" class="hover:text-blue-600">Preaching Points</a>
+        <a href="projects.html" class="hover:text-blue-600">Projects</a>
+        <a href="events.html" class="hover:text-blue-600">Events</a>
+        <a href="give.html" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600 font-semibold">Give</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="lg:hidden text-blue-800">
+        <i class="fas fa-bars text-3xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
+      <nav class="px-6 py-6 space-y-4">
+        <a href="index.html" class="block text-lg hover:text-blue-600">Home</a>
+        
+        <!-- Mobile About Us Accordion -->
+        <div>
+          <button id="mobile-about-toggle" class="flex justify-between w-full text-lg hover:text-blue-600 py-2">
+            About Us <i class="fas fa-chevron-down transition-transform" id="mobile-about-chevron"></i>
+          </button>
+          <div id="mobile-about-submenu" class="hidden pl-6 space-y-3 mt-2">
+            <a href="about.html" class="block hover:text-blue-600">Overview</a>
+            <a href="history.html" class="block hover:text-blue-600">History</a>
+            <a href="vision-mission.html" class="block hover:text-blue-600">Vision & Mission</a>
+            <a href="faith.html" class="block hover:text-blue-600">Statement of Faith</a>
+          </div>
+        </div>
+        
+        <a href="churches.html" class="block text-lg hover:text-blue-600">Churches</a>
+        <a href="leadership.html" class="block text-lg hover:text-blue-600">Leadership</a>
+        <a href="sermons.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
+        <a href="projects.html" class="block text-lg hover:text-blue-600">Projects</a>
+        <a href="events.html" class="block text-lg hover:text-blue-600">Events</a>
+        <a href="give.html" class="block bg-yellow-500 text-white px-6 py-4 rounded-full text-center hover:bg-yellow-600 font-semibold">Give</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-96 md:min-h-screen bg-cover bg-center flex items-center" style="background-image: url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+    <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
+    <div class="relative container mx-auto px-6 text-center text-white">
+      <h2 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-4">About Us</h2>
+      <p class="text-xl sm:text-2xl md:text-3xl max-w-4xl mx-auto">A community of faith, love, and service</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="prose prose-lg mx-auto text-gray-700">
+        <h2 class="text-4xl font-bold text-blue-800 mb-8 text-center">Who We Are</h2>
+        <p class="mb-6">
+          Our Church is a vibrant, Bible-believing community dedicated to worshiping God, growing in faith, and serving others. We welcome people from all walks of life to experience the love of Christ in a warm and accepting environment.
+        </p>
+        <p class="mb-6">
+          Founded in love and guided by Scripture, we strive to be a place where individuals and families can encounter God, find belonging, and be equipped to live out their faith every day. Our diverse congregation reflects the beauty of God's kingdom—people of different ages, backgrounds, and cultures united in Christ.
+        </p>
+        <h3 class="text-3xl font-bold text-blue-800 mt-12 mb-6">What We Believe</h3>
+        <p class="mb-6">
+          We hold firmly to the core truths of the Christian faith as revealed in the Bible. Our beliefs are summarized in our <a href="faith.html" class="text-blue-600 hover:underline">Statement of Faith</a>, and our purpose is expressed through our <a href="vision-mission.html" class="text-blue-600 hover:underline">Vision & Mission</a>.
+        </p>
+        <h3 class="text-3xl font-bold text-blue-800 mt-12 mb-6">Our Story</h3>
+        <p class="mb-6">
+          Learn more about how God has faithfully led us through the years in our <a href="history.html" class="text-blue-600 hover:underline">History</a> page.
+        </p>
+        <div class="text-center mt-12">
+          <a href="events.html" class="inline-block bg-yellow-500 text-white px-10 py-5 rounded-full hover:bg-yellow-600 font-bold text-xl shadow-lg">
+            Join Us This Sunday
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg">&copy; 2026 Our Church. All rights reserved.</p>
+      <p class="mt-4">123 Church St, City, State 12345 | (123) 456-7890 | info@ourchurch.org</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Mobile About Us submenu toggle
+    document.getElementById('mobile-about-toggle').addEventListener('click', () => {
+      const submenu = document.getElementById('mobile-about-submenu');
+      const chevron = document.getElementById('mobile-about-chevron');
+      submenu.classList.toggle('hidden');
+      chevron.classList.toggle('rotate-180');
+    });
+  </script>
+</body>
+</html>
