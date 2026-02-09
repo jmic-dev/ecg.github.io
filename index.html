@@ -32,11 +32,10 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Updated Top Bar with Email + Social Icons -->
+  <!-- Top Bar: Phone + Email + Social Icons -->
   <div class="bg-blue-800 text-white py-3 px-4 text-sm">
     <div class="container mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-6">
-
-      <!-- Social Icons (left side on desktop, top on mobile) -->
+      <!-- Social Icons -->
       <div class="flex items-center gap-6 order-last sm:order-first">
         <a href="https://www.facebook.com/yourchurchpage" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">
           <i class="fab fa-facebook-f text-2xl"></i>
@@ -45,7 +44,6 @@
           <i class="fab fa-youtube text-2xl"></i>
         </a>
       </div>
-
       <!-- Contact Info -->
       <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 text-center sm:text-left">
         <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
@@ -53,22 +51,24 @@
           <i class="fas fa-envelope mr-2"></i>
           <a href="mailto:info@ourchurch.org" class="hover:underline">info@ourchurch.org</a>
         </div>
-        <div><i class="fas fa-clock mr-2"></i>Sunday Services: 9am & 11am</div>
       </div>
-
     </div>
   </div>
 
-  <!-- Header with full navigation -->
+  <!-- Latest Header -->
   <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="flex items-center">
-        <img src="https://i.etsystatic.com/19543171/r/il/2ff2cc/5634035219/il_fullxfull.5634035219_lsqc.jpg" alt="Church Logo" class="w-12 h-12 mr-3 object-contain">
-        <h1 class="text-2xl font-bold text-blue-800">Our Church</h1>
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-5 flex justify-between items-center gap-10 lg:gap-16 xl:gap-20">
+      <!-- Logo -->
+      <div class="flex items-center min-w-0 flex-shrink-0">
+        <img
+          src="images/ecg-logo.jpg"
+          alt="Evangelical Church of The Gambia Logo"
+          class="w-12 h-12 md:w-14 md:h-14 object-contain mr-4 flex-shrink-0"
+        >
       </div>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex space-x-8 items-center">
+      <!-- Desktop Navigation – pushed right -->
+      <nav class="hidden lg:flex justify-end items-center space-x-8 xl:space-x-10 2xl:space-x-12 ml-auto">
         <a href="index.html" class="hover:text-blue-600">Home</a>
         
         <!-- About Us Dropdown -->
@@ -80,13 +80,14 @@
             <a href="about.html" class="block px-6 py-4 hover:bg-gray-100 border-b border-gray-200">Overview</a>
             <a href="history.html" class="block px-6 py-4 hover:bg-gray-100 border-b border-gray-200">History</a>
             <a href="vision-mission.html" class="block px-6 py-4 hover:bg-gray-100 border-b border-gray-200">Vision & Mission</a>
+            <a href="leadership.html" class="block px-6 py-4 hover:bg-gray-100 border-b border-gray-200">Leadership</a>
             <a href="faith.html" class="block px-6 py-4 hover:bg-gray-100">Statement of Faith</a>
           </div>
         </div>
         
         <a href="churches.html" class="hover:text-blue-600">Churches</a>
-        <a href="leadership.html" class="hover:text-blue-600">Leadership</a>
-        <a href="preaching-points.html" class="hover:text-blue-600">Preaching Points</a>
+        <a href="sermons.html" class="hover:text-blue-600">Preaching Points</a>
+        <a href="ministries.html" class="hover:text-blue-600">Ministries</a>
         <a href="projects.html" class="hover:text-blue-600">Projects</a>
         <a href="events.html" class="hover:text-blue-600">Events</a>
         <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
@@ -114,13 +115,14 @@
             <a href="about.html" class="block hover:text-blue-600">Overview</a>
             <a href="history.html" class="block hover:text-blue-600">History</a>
             <a href="vision-mission.html" class="block hover:text-blue-600">Vision & Mission</a>
+            <a href="leadership.html" class="block hover:text-blue-600">Leadership</a>
             <a href="faith.html" class="block hover:text-blue-600">Statement of Faith</a>
           </div>
         </div>
         
         <a href="churches.html" class="block text-lg hover:text-blue-600">Churches</a>
-        <a href="leadership.html" class="block text-lg hover:text-blue-600">Leadership</a>
         <a href="sermons.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
+        <a href="ministries.html" class="block text-lg hover:text-blue-600">Ministries</a>
         <a href="projects.html" class="block text-lg hover:text-blue-600">Projects</a>
         <a href="events.html" class="block text-lg hover:text-blue-600">Events</a>
         <a href="gallery.html" class="block text-lg hover:text-blue-600">Gallery</a>
@@ -265,14 +267,19 @@
     </div>
   </section>
 
-  <!-- Updated Mega Footer - 3 Columns -->
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="fixed bottom-6 right-6 z-50 bg-blue-800 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-900 transition-all duration-300 opacity-0 invisible translate-y-4">
+    <i class="fas fa-arrow-up text-xl"></i>
+  </button>
+
+  <!-- Mega Footer - 4 Columns -->
   <footer class="bg-blue-900 text-white">
     <div class="container mx-auto px-6 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
         <!-- Column 1 - About & Social -->
         <div>
-          <h3 class="text-2xl font-bold mb-6">Our Church</h3>
+          <h3 class="text-2xl font-bold mb-6">Evangelical Church of The Gambia</h3>
           <p class="text-gray-300 mb-6 leading-relaxed">
             A loving community dedicated to worship, growth, and serving others with the love of Christ.
           </p>
@@ -301,7 +308,7 @@
           </ul>
         </div>
 
-        <!-- Column 3 - Service Times & Contact -->
+        <!-- Column 3 - Service Times -->
         <div>
           <h4 class="text-xl font-bold mb-6">Service Times</h4>
           <ul class="space-y-3 text-gray-300">
@@ -309,8 +316,11 @@
             <li>Sunday Worship — 11:00 AM</li>
             <li>Wednesday Bible Study — 7:00 PM</li>
           </ul>
+        </div>
 
-          <h4 class="text-xl font-bold mt-10 mb-6">Contact</h4>
+        <!-- Column 4 - Contact -->
+        <div>
+          <h4 class="text-xl font-bold mb-6">Contact</h4>
           <p class="text-gray-300">
             123 Church Street<br>
             City, State 12345<br><br>
@@ -323,13 +333,14 @@
 
       <!-- Copyright -->
       <div class="mt-12 pt-8 border-t border-blue-700 text-center text-gray-400 text-sm">
-        © 2026 Our Church. All rights reserved.
+        © 2026 Evangelical Church of The Gambia. All rights reserved.
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script>
-    // Main mobile menu toggle
+    // Mobile menu toggle
     document.getElementById('mobile-menu-button').addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
@@ -340,6 +351,23 @@
       const chevron = document.getElementById('mobile-about-chevron');
       submenu.classList.toggle('hidden');
       chevron.classList.toggle('rotate-180');
+    });
+
+    // Scroll to Top Button
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+        scrollTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+      } else {
+        scrollTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+        scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
