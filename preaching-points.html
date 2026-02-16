@@ -3,16 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preaching Points - Our Church</title>
+  <title>Preaching Points - Evangelical Church of The Gambia</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Preaching Points card accent & hover (unchanged) */
+    .pp-card {
+      border-top: 4px solid #4f46e5;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .pp-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.2);
+    }
+    .pp-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body class="font-sans text-gray-800 bg-white">
 
-  <!-- Top Bar: Phone + Email + Social Icons (no Sunday Services) -->
+  <!-- Top Bar: Phone + Email + Social Icons -->
   <div class="bg-blue-800 text-white py-3 px-4 text-sm">
     <div class="container mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-6">
-      <!-- Social Icons -->
       <div class="flex items-center gap-6 order-last sm:order-first">
         <a href="https://www.facebook.com/yourchurchpage" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">
           <i class="fab fa-facebook-f text-2xl"></i>
@@ -21,21 +37,19 @@
           <i class="fab fa-youtube text-2xl"></i>
         </a>
       </div>
-      <!-- Contact Info -->
       <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 text-center sm:text-left">
         <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
         <div>
           <i class="fas fa-envelope mr-2"></i>
-          <a href="mailto:info@ourchurch.org" class="hover:underline">info@ourchurch.org</a>
+          <a href="mailto:info@ecg.gm" class="hover:underline">info@ecg.gm</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Latest Header -->
+  <!-- Header (identical) -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-5 flex justify-between items-center gap-10 lg:gap-16 xl:gap-20">
-      <!-- Logo -->
       <div class="flex items-center min-w-0 flex-shrink-0">
         <img
           src="images/ecg-logo.jpg"
@@ -43,12 +57,8 @@
           class="w-12 h-12 md:w-14 md:h-14 object-contain mr-4 flex-shrink-0"
         >
       </div>
-
-      <!-- Desktop Navigation – pushed right -->
       <nav class="hidden lg:flex justify-end items-center space-x-8 xl:space-x-10 2xl:space-x-12 ml-auto">
         <a href="index.html" class="hover:text-blue-600">Home</a>
-        
-        <!-- About Us Dropdown -->
         <div class="relative group">
           <button class="hover:text-blue-600 flex items-center focus:outline-none">
             About Us <i class="fas fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
@@ -61,9 +71,8 @@
             <a href="faith.html" class="block px-6 py-4 hover:bg-gray-100">Statement of Faith</a>
           </div>
         </div>
-        
         <a href="churches.html" class="hover:text-blue-600">Churches</a>
-        <a href="preaching-points.html" class="hover:text-blue-600 font-semibold">Preaching Points</a>
+        <a href="preaching-points.html" class="text-blue-800 font-bold hover:text-blue-900">Preaching Points</a>
         <a href="ministries.html" class="hover:text-blue-600">Ministries</a>
         <a href="projects.html" class="hover:text-blue-600">Projects</a>
         <a href="events.html" class="hover:text-blue-600">Events</a>
@@ -71,19 +80,14 @@
         <a href="contact.html" class="hover:text-blue-600">Contact</a>
         <a href="give.html" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600 font-semibold">Give</a>
       </nav>
-
-      <!-- Mobile Menu Button -->
       <button id="mobile-menu-button" class="lg:hidden text-blue-800">
         <i class="fas fa-bars text-3xl"></i>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
       <nav class="px-6 py-6 space-y-4">
         <a href="index.html" class="block text-lg hover:text-blue-600">Home</a>
-        
-        <!-- Mobile About Us Accordion -->
         <div>
           <button id="mobile-about-toggle" class="flex justify-between w-full text-lg hover:text-blue-600 py-2">
             About Us <i class="fas fa-chevron-down transition-transform" id="mobile-about-chevron"></i>
@@ -96,9 +100,8 @@
             <a href="faith.html" class="block hover:text-blue-600">Statement of Faith</a>
           </div>
         </div>
-        
         <a href="churches.html" class="block text-lg hover:text-blue-600">Churches</a>
-        <a href="sermons.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
+        <a href="preaching-points.html" class="block text-lg text-blue-800 font-bold">Preaching Points</a>
         <a href="ministries.html" class="block text-lg hover:text-blue-600">Ministries</a>
         <a href="projects.html" class="block text-lg hover:text-blue-600">Projects</a>
         <a href="events.html" class="block text-lg hover:text-blue-600">Events</a>
@@ -109,40 +112,63 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative h-96 md:h-screen bg-cover bg-center" style="background-image: url('https://images.freeimages.com/images/large-previews/928/bulgar-kilisesi-bulgarian-church-1441594.jpg');">
-    <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
+  <!-- Hero (same structure, different image) -->
+  <section class="relative h-96 md:h-screen bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/5428835/pexels-photo-5428835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+    <div class="absolute inset-0 bg-indigo-900 opacity-75"></div>
     <div class="relative container mx-auto h-full flex flex-col justify-center items-center text-white text-center px-4">
       <h2 class="text-5xl md:text-7xl font-bold">Preaching Points</h2>
     </div>
   </section>
 
-  <!-- Preaching Points Content -->
+  <!-- Preaching Points Content (same grid layout as Churches) -->
   <section class="py-16 container mx-auto px-4">
-    <p class="text-center text-gray-600 mb-12 max-w-4xl mx-auto">Our family of preaching points serving multiple locations...</p>
+    <p class="text-center text-gray-600 mb-12 max-w-4xl mx-auto">
+      Preaching Points are small fellowships where believers gather regularly to worship, study the Word, pray, and encourage one another. These intimate meetings — often in homes or community spaces — are the growing edges of the church and have not yet developed into fully established churches.
+    </p>
+
     <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-12">
-      <!-- Preaching point cards (example - replace/add real content) -->
-      <div class="text-center">
-        <img src="https://c8.alamy.com/comp/RFT8R6/bloemfontein-south-africa-january-26-2019-the-offices-of-engo-the-social-services-branch-of-the-dutch-reformed-church-in-the-free-state-province-RFT8R6.jpg" alt="Preaching Point" class="w-full rounded-lg shadow-lg mb-4">
-        <h3 class="text-xl font-bold">Main Preaching Point</h3>
-        <p class="text-gray-600">123 Church St</p>
-      </div>
-      <div class="text-center">
-        <img src="https://c8.alamy.com/comp/RFT8R6/bloemfontein-south-africa-january-26-2019-the-offices-of-engo-the-social-services-branch-of-the-dutch-reformed-church-in-the-free-state-province-RFT8R6.jpg" alt="Preaching Point" class="w-full rounded-lg shadow-lg mb-4">
-        <h3 class="text-xl font-bold">Main Preaching Point</h3>
-        <p class="text-gray-600">123 Church St</p>
-      </div>
-      <div class="text-center">
-        <img src="https://c8.alamy.com/comp/RFT8R6/bloemfontein-south-africa-january-26-2019-the-offices-of-engo-the-social-services-branch-of-the-dutch-reformed-church-in-the-free-state-province-RFT8R6.jpg" alt="Preaching Point" class="w-full rounded-lg shadow-lg mb-4">
-        <h3 class="text-xl font-bold">Main Preaching Point</h3>
-        <p class="text-gray-600">123 Church St</p>
-      </div>
-      <div class="text-center">
-        <img src="https://c8.alamy.com/comp/RFT8R6/bloemfontein-south-africa-january-26-2019-the-offices-of-engo-the-social-services-branch-of-the-dutch-reformed-church-in-the-free-state-province-RFT8R6.jpg" alt="Preaching Point" class="w-full rounded-lg shadow-lg mb-4">
-        <h3 class="text-xl font-bold">Main Preaching Point</h3>
-        <p class="text-gray-600">123 Church St</p>
-      </div>
-      <!-- Add more cards as needed -->
+      <!-- Clickable card with only title + Learn More -->
+      <a href="banjul-central.html" class="pp-card bg-white rounded-xl overflow-hidden text-center block">
+        <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banjul Central" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold accent-indigo mb-4">Banjul Central Fellowship</h3>
+          <span class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
+            Learn More →
+          </span>
+        </div>
+      </a>
+
+      <a href="serekunda-west.html" class="pp-card bg-white rounded-xl overflow-hidden text-center block">
+        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Serekunda West" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold accent-indigo mb-4">Serekunda West Gathering</h3>
+          <span class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
+            Learn More →
+          </span>
+        </div>
+      </a>
+
+      <a href="bakau-coastal.html" class="pp-card bg-white rounded-xl overflow-hidden text-center block">
+        <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bakau Coastal" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold accent-indigo mb-4">Bakau Coastal Fellowship</h3>
+          <span class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
+            Learn More →
+          </span>
+        </div>
+      </a>
+
+      <a href="brikama-outreach.html" class="pp-card bg-white rounded-xl overflow-hidden text-center block">
+        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Brikama Outreach" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold accent-indigo mb-4">Brikama Outreach Point</h3>
+          <span class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
+            Learn More →
+          </span>
+        </div>
+      </a>
+
+      <!-- Add more clickable cards in the same style as needed -->
     </div>
   </section>
 
@@ -155,8 +181,6 @@
   <footer class="bg-blue-900 text-white">
     <div class="container mx-auto px-6 py-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-
-        <!-- Column 1 - About & Social -->
         <div>
           <h3 class="text-2xl font-bold mb-6">Evangelical Church of The Gambia</h3>
           <p class="text-gray-300 mb-6 leading-relaxed">
@@ -171,8 +195,6 @@
             </a>
           </div>
         </div>
-
-        <!-- Column 2 - Quick Links -->
         <div>
           <h4 class="text-xl font-bold mb-6">Quick Links</h4>
           <ul class="space-y-3 text-gray-300">
@@ -186,8 +208,6 @@
             <li><a href="give.html" class="hover:text-yellow-400 transition">Give</a></li>
           </ul>
         </div>
-
-        <!-- Column 3 - Service Times -->
         <div>
           <h4 class="text-xl font-bold mb-6">Service Times</h4>
           <ul class="space-y-3 text-gray-300">
@@ -196,21 +216,16 @@
             <li>Wednesday Bible Study — 7:00 PM</li>
           </ul>
         </div>
-
-        <!-- Column 4 - Contact -->
         <div>
           <h4 class="text-xl font-bold mb-6">Contact</h4>
           <p class="text-gray-300">
             123 Church Street<br>
             City, State 12345<br><br>
             <a href="tel:+1234567890" class="hover:text-yellow-400">(123) 456-7890</a><br>
-            <a href="mailto:info@ourchurch.org" class="hover:text-yellow-400">info@ourchurch.org</a>
+            <a href="mailto:info@ecg.gm" class="hover:text-yellow-400">info@ecg.gm</a>
           </p>
         </div>
-
       </div>
-
-      <!-- Copyright -->
       <div class="mt-12 pt-8 border-t border-blue-700 text-center text-gray-400 text-sm">
         © 2026 Evangelical Church of The Gambia. All rights reserved.
       </div>
@@ -219,22 +234,16 @@
 
   <!-- Scripts -->
   <script>
-    // Mobile menu toggle
     document.getElementById('mobile-menu-button').addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-
-    // Mobile About Us submenu toggle
     document.getElementById('mobile-about-toggle').addEventListener('click', () => {
       const submenu = document.getElementById('mobile-about-submenu');
       const chevron = document.getElementById('mobile-about-chevron');
       submenu.classList.toggle('hidden');
       chevron.classList.toggle('rotate-180');
     });
-
-    // Scroll to Top Button
     const scrollTopBtn = document.getElementById('scrollTopBtn');
-
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
         scrollTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
@@ -244,7 +253,6 @@
         scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
       }
     });
-
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
