@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Our Church</title>
+  <title>Projects - Evangelical Church of The Gambia</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Top Bar: Phone + Email + Social Icons (no Sunday Services) -->
+  <!-- Top Bar: Phone + Email + Social Icons -->
   <div class="bg-blue-800 text-white py-3 px-4 text-sm">
     <div class="container mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-6">
-      <!-- Social Icons -->
       <div class="flex items-center gap-6 order-last sm:order-first">
         <a href="https://www.facebook.com/yourchurchpage" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">
           <i class="fab fa-facebook-f text-2xl"></i>
@@ -21,18 +20,17 @@
           <i class="fab fa-youtube text-2xl"></i>
         </a>
       </div>
-      <!-- Contact Info -->
       <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 text-center sm:text-left">
         <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
         <div>
           <i class="fas fa-envelope mr-2"></i>
-          <a href="mailto:info@ourchurch.org" class="hover:underline">info@ourchurch.org</a>
+          <a href="mailto:info@ecg.gm" class="hover:underline">info@ecg.gm</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Latest Header -->
+  <!-- Header with updated navbar (News & Events removed, Get Involved added back) -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-5 flex justify-between items-center gap-10 lg:gap-16 xl:gap-20">
       <!-- Logo -->
@@ -44,10 +42,10 @@
         >
       </div>
 
-      <!-- Desktop Navigation – pushed right -->
+      <!-- Updated Desktop Navigation -->
       <nav class="hidden lg:flex justify-end items-center space-x-8 xl:space-x-10 2xl:space-x-12 ml-auto">
         <a href="index.html" class="hover:text-blue-600">Home</a>
-        
+
         <!-- About Us Dropdown -->
         <div class="relative group">
           <button class="hover:text-blue-600 flex items-center focus:outline-none">
@@ -61,13 +59,13 @@
             <a href="faith.html" class="block px-6 py-4 hover:bg-gray-100">Statement of Faith</a>
           </div>
         </div>
-        
+
         <a href="churches.html" class="hover:text-blue-600">Churches</a>
-        <a href="sermons.html" class="hover:text-blue-600">Preaching Points</a>
+        <a href="preaching-points.html" class="hover:text-blue-600">Preaching Points</a>
         <a href="ministries.html" class="hover:text-blue-600">Ministries</a>
-        <a href="projects.html" class="hover:text-blue-600 font-semibold">Projects</a>
-        <a href="events.html" class="hover:text-blue-600">Events</a>
+        <a href="projects.html" class="text-blue-800 font-bold hover:text-blue-900">Projects</a>
         <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
+        <a href="get-involved.html" class="hover:text-blue-600">Get Involved</a>
         <a href="contact.html" class="hover:text-blue-600">Contact</a>
         <a href="give.html" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600 font-semibold">Give</a>
       </nav>
@@ -78,11 +76,11 @@
       </button>
     </div>
 
-    <!-- Mobile Menu -->
+    <!-- Updated Mobile Menu – matches desktop (News & Events removed, Get Involved added) -->
     <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
       <nav class="px-6 py-6 space-y-4">
         <a href="index.html" class="block text-lg hover:text-blue-600">Home</a>
-        
+
         <!-- Mobile About Us Accordion -->
         <div>
           <button id="mobile-about-toggle" class="flex justify-between w-full text-lg hover:text-blue-600 py-2">
@@ -96,13 +94,13 @@
             <a href="faith.html" class="block hover:text-blue-600">Statement of Faith</a>
           </div>
         </div>
-        
+
         <a href="churches.html" class="block text-lg hover:text-blue-600">Churches</a>
-        <a href="sermons.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
+        <a href="preaching-points.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
         <a href="ministries.html" class="block text-lg hover:text-blue-600">Ministries</a>
-        <a href="projects.html" class="block text-lg hover:text-blue-600">Projects</a>
-        <a href="events.html" class="block text-lg hover:text-blue-600">Events</a>
+        <a href="projects.html" class="block text-lg text-blue-800 font-bold">Projects</a>
         <a href="gallery.html" class="block text-lg hover:text-blue-600">Gallery</a>
+        <a href="get-involved.html" class="block text-lg hover:text-blue-600">Get Involved</a>
         <a href="contact.html" class="block text-lg hover:text-blue-600">Contact</a>
         <a href="give.html" class="block bg-yellow-500 text-white px-6 py-4 rounded-full text-center hover:bg-yellow-600 font-semibold">Give</a>
       </nav>
@@ -110,11 +108,20 @@
   </header>
 
   <!-- Hero -->
-  <section class="relative min-h-96 md:min-h-screen bg-cover bg-center flex items-center" style="background-image: url('https://images.pexels.com/photos/19058725/pexels-photo-19058725/free-photo-of-silhouette-of-cathedral-during-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+  <section class="relative min-h-96 md:min-h-screen bg-cover bg-center flex items-center" style="background-image: url('https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
     <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
     <div class="relative container mx-auto px-6 text-center text-white">
       <h2 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-4">Projects</h2>
       <p class="text-xl sm:text-2xl md:text-3xl max-w-4xl mx-auto">Get involved in our outreach projects. We'd love for you to join us!</p>
+    </div>
+  </section>
+
+  <!-- Intro Paragraph -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-6 max-w-5xl text-center">
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Through our projects, we seek to meet practical needs, show Christ's love in action, and build stronger communities across The Gambia. From building community centers to supporting food banks and mission work — every project is an opportunity to serve and glorify God.
+      </p>
     </div>
   </section>
 
@@ -137,7 +144,6 @@
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <!-- Project Card 1 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
           <img src="https://images.pexels.com/photos/2588465/pexels-photo-2588465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Church" class="w-full h-64 object-cover">
           <div class="p-6">
@@ -150,7 +156,6 @@
           </div>
         </div>
 
-        <!-- Project Card 2 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
           <img src="https://images.pexels.com/photos/2366983/pexels-photo-2366983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Church" class="w-full h-64 object-cover">
           <div class="p-6">
@@ -163,7 +168,6 @@
           </div>
         </div>
 
-        <!-- Project Card 3 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
           <img src="https://images.pexels.com/photos/2588472/pexels-photo-2588472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Church" class="w-full h-64 object-cover">
           <div class="p-6">
@@ -176,7 +180,6 @@
           </div>
         </div>
 
-        <!-- Project Card 4 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
           <img src="https://images.pexels.com/photos/2588468/pexels-photo-2588468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Church" class="w-full h-64 object-cover">
           <div class="p-6">
@@ -188,7 +191,6 @@
             </div>
           </div>
         </div>
-        <!-- You can continue adding more project cards here -->
       </div>
     </div>
   </section>
@@ -202,8 +204,6 @@
   <footer class="bg-blue-900 text-white">
     <div class="container mx-auto px-6 py-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-
-        <!-- Column 1 - About & Social -->
         <div>
           <h3 class="text-2xl font-bold mb-6">Evangelical Church of The Gambia</h3>
           <p class="text-gray-300 mb-6 leading-relaxed">
@@ -218,23 +218,18 @@
             </a>
           </div>
         </div>
-
-        <!-- Column 2 - Quick Links -->
         <div>
           <h4 class="text-xl font-bold mb-6">Quick Links</h4>
           <ul class="space-y-3 text-gray-300">
             <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
             <li><a href="about.html" class="hover:text-yellow-400 transition">About Us</a></li>
             <li><a href="ministries.html" class="hover:text-yellow-400 transition">Ministries</a></li>
-            <li><a href="events.html" class="hover:text-yellow-400 transition">Events</a></li>
-            <li><a href="sermons.html" class="hover:text-yellow-400 transition">Sermons</a></li>
             <li><a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a></li>
+            <li><a href="get-involved.html" class="hover:text-yellow-400 transition">Get Involved</a></li>
             <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
             <li><a href="give.html" class="hover:text-yellow-400 transition">Give</a></li>
           </ul>
         </div>
-
-        <!-- Column 3 - Service Times -->
         <div>
           <h4 class="text-xl font-bold mb-6">Service Times</h4>
           <ul class="space-y-3 text-gray-300">
@@ -243,21 +238,16 @@
             <li>Wednesday Bible Study — 7:00 PM</li>
           </ul>
         </div>
-
-        <!-- Column 4 - Contact -->
         <div>
           <h4 class="text-xl font-bold mb-6">Contact</h4>
           <p class="text-gray-300">
             123 Church Street<br>
             City, State 12345<br><br>
             <a href="tel:+1234567890" class="hover:text-yellow-400">(123) 456-7890</a><br>
-            <a href="mailto:info@ourchurch.org" class="hover:text-yellow-400">info@ourchurch.org</a>
+            <a href="mailto:info@ecg.gm" class="hover:text-yellow-400">info@ecg.gm</a>
           </p>
         </div>
-
       </div>
-
-      <!-- Copyright -->
       <div class="mt-12 pt-8 border-t border-blue-700 text-center text-gray-400 text-sm">
         © 2026 Evangelical Church of The Gambia. All rights reserved.
       </div>
@@ -266,22 +256,16 @@
 
   <!-- Scripts -->
   <script>
-    // Mobile menu toggle
     document.getElementById('mobile-menu-button').addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-
-    // Mobile About Us submenu toggle
     document.getElementById('mobile-about-toggle').addEventListener('click', () => {
       const submenu = document.getElementById('mobile-about-submenu');
       const chevron = document.getElementById('mobile-about-chevron');
       submenu.classList.toggle('hidden');
       chevron.classList.toggle('rotate-180');
     });
-
-    // Scroll to Top Button
     const scrollTopBtn = document.getElementById('scrollTopBtn');
-
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
         scrollTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
@@ -291,7 +275,6 @@
         scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
       }
     });
-
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });

@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - Evangelical Church of The Gambia</title>
+  <title>News & Events - Evangelical Church of The Gambia</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="font-sans text-gray-800 bg-white">
 
   <!-- Top Bar: Phone + Email + Social Icons -->
   <div class="bg-blue-800 text-white py-3 px-4 text-sm">
     <div class="container mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-6">
-      <!-- Social Icons -->
       <div class="flex items-center gap-6 order-last sm:order-first">
         <a href="https://www.facebook.com/yourchurchpage" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">
           <i class="fab fa-facebook-f text-2xl"></i>
@@ -21,7 +20,6 @@
           <i class="fab fa-youtube text-2xl"></i>
         </a>
       </div>
-      <!-- Contact Info -->
       <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 text-center sm:text-left">
         <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
         <div>
@@ -32,10 +30,9 @@
     </div>
   </div>
 
-  <!-- Header – Gallery highlighted -->
+  <!-- Header -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-5 flex justify-between items-center gap-10 lg:gap-16 xl:gap-20">
-      <!-- Logo -->
       <div class="flex items-center min-w-0 flex-shrink-0">
         <img
           src="images/ecg-logo.jpg"
@@ -43,12 +40,8 @@
           class="w-12 h-12 md:w-14 md:h-14 object-contain mr-4 flex-shrink-0"
         >
       </div>
-
-      <!-- Desktop Navigation -->
       <nav class="hidden lg:flex justify-end items-center space-x-8 xl:space-x-10 2xl:space-x-12 ml-auto">
         <a href="index.html" class="hover:text-blue-600">Home</a>
-
-        <!-- About Us Dropdown -->
         <div class="relative group">
           <button class="hover:text-blue-600 flex items-center focus:outline-none">
             About Us <i class="fas fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
@@ -61,29 +54,24 @@
             <a href="faith.html" class="block px-6 py-4 hover:bg-gray-100">Statement of Faith</a>
           </div>
         </div>
-
         <a href="churches.html" class="hover:text-blue-600">Churches</a>
         <a href="preaching-points.html" class="hover:text-blue-600">Preaching Points</a>
         <a href="ministries.html" class="hover:text-blue-600">Ministries</a>
         <a href="projects.html" class="hover:text-blue-600">Projects</a>
-        <a href="gallery.html" class="text-blue-800 font-bold hover:text-blue-900">Gallery</a>
+        <a href="events.html" class="hover:text-blue-600 font-semibold">Events</a>
+        <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
         <a href="get-involved.html" class="hover:text-blue-600">Get Involved</a>
         <a href="contact.html" class="hover:text-blue-600">Contact</a>
         <a href="give.html" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600 font-semibold">Give</a>
       </nav>
-
-      <!-- Mobile Menu Button -->
       <button id="mobile-menu-button" class="lg:hidden text-blue-800">
         <i class="fas fa-bars text-3xl"></i>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
       <nav class="px-6 py-6 space-y-4">
         <a href="index.html" class="block text-lg hover:text-blue-600">Home</a>
-
-        <!-- Mobile About Us Accordion -->
         <div>
           <button id="mobile-about-toggle" class="flex justify-between w-full text-lg hover:text-blue-600 py-2">
             About Us <i class="fas fa-chevron-down transition-transform" id="mobile-about-chevron"></i>
@@ -96,12 +84,12 @@
             <a href="faith.html" class="block hover:text-blue-600">Statement of Faith</a>
           </div>
         </div>
-
         <a href="churches.html" class="block text-lg hover:text-blue-600">Churches</a>
         <a href="preaching-points.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
         <a href="ministries.html" class="block text-lg hover:text-blue-600">Ministries</a>
         <a href="projects.html" class="block text-lg hover:text-blue-600">Projects</a>
-        <a href="gallery.html" class="block text-lg text-blue-800 font-bold">Gallery</a>
+        <a href="news-events.html" class="block text-lg hover:text-blue-600 font-semibold">Events</a>
+        <a href="gallery.html" class="block text-lg hover:text-blue-600">Gallery</a>
         <a href="get-involved.html" class="block text-lg hover:text-blue-600">Get Involved</a>
         <a href="contact.html" class="block text-lg hover:text-blue-600">Contact</a>
         <a href="give.html" class="block bg-yellow-500 text-white px-6 py-4 rounded-full text-center hover:bg-yellow-600 font-semibold">Give</a>
@@ -109,135 +97,95 @@
     </div>
   </header>
 
-  <!-- HERO – Consistent style -->
-  <section class="relative h-96 md:h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+  <!-- Hero -->
+  <section class="relative h-96 md:h-screen bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
     <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
     <div class="relative container mx-auto h-full flex flex-col justify-center items-center text-white text-center px-4">
-      <h2 class="text-5xl md:text-7xl font-bold">Church Gallery</h2>
-      <p class="text-xl md:text-3xl mt-4">Moments of worship, fellowship, and service</p>
+      <h2 class="text-5xl md:text-7xl font-bold">News & Events</h2>
+      <p class="text-xl md:text-3xl mt-4">Stay updated with what God is doing in our community</p>
     </div>
   </section>
 
-  <!-- FILTERS -->
-  <section class="max-w-7xl mx-auto px-6 mt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
-    <div class="space-x-3">
-      <button class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm">All Albums</button>
-      <button class="px-4 py-2 bg-white border rounded-lg text-sm hover:bg-slate-100">Photos</button>
-      <button class="px-4 py-2 bg-white border rounded-lg text-sm hover:bg-slate-100">Videos</button>
-    </div>
-    <div class="flex items-center space-x-3 text-sm">
-      <span class="text-slate-500">Share:</span>
-      <button class="px-3 py-2 bg-white border rounded-lg hover:bg-slate-100">Facebook</button>
-      <button class="px-3 py-2 bg-white border rounded-lg hover:bg-slate-100">Twitter</button>
-      <button class="px-3 py-2 bg-white border rounded-lg hover:bg-slate-100">Copy Link</button>
+  <!-- Main Content: News + Events -->
+  <section class="py-16 container mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- Latest News -->
+      <div>
+        <h3 class="text-3xl font-bold text-blue-800 mb-8">Latest News</h3>
+        <div class="space-y-10">
+          <!-- News Item 1 -->
+          <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="News" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-sm text-gray-500">February 20, 2026</span>
+              <h4 class="text-xl font-bold mt-2 mb-3">Community Outreach Day Draws Hundreds</h4>
+              <p class="text-gray-700 mb-4">Last Saturday our teams served over 300 families with food, clothing, and prayer. God moved powerfully!</p>
+              <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read Full Story →</a>
+            </div>
+          </article>
+
+          <!-- News Item 2 -->
+          <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="News" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <span class="text-sm text-gray-500">February 15, 2026</span>
+              <h4 class="text-xl font-bold mt-2 mb-3">Youth Conference 2026 Announced</h4>
+              <p class="text-gray-700 mb-4">Mark your calendars — our annual youth event will take place April 10–12 with powerful speakers and worship.</p>
+              <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+            </div>
+          </article>
+
+          <!-- Add more news items as needed -->
+        </div>
+        <div class="text-center mt-10">
+          <a href="#" class="inline-block bg-blue-800 text-white px-10 py-4 rounded-full hover:bg-blue-900 font-semibold">View All News</a>
+        </div>
+      </div>
+
+      <!-- Upcoming Events -->
+      <div>
+        <h3 class="text-3xl font-bold text-blue-800 mb-8">Upcoming Events</h3>
+        <div class="space-y-8">
+          <!-- Event 1 -->
+          <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500">
+            <div class="flex items-start gap-4">
+              <div class="text-center min-w-[80px] bg-yellow-100 p-4 rounded-lg">
+                <div class="text-3xl font-bold">28</div>
+                <div class="text-sm text-gray-700">Feb</div>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Prayer & Fasting Night</h4>
+                <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-clock mr-2 text-yellow-600"></i>6:00 PM – 9:00 PM</p>
+                <p class="text-gray-700">A special evening of worship, intercession, and seeking God's face together.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500">
+            <div class="flex items-start gap-4">
+              <div class="text-center min-w-[80px] bg-yellow-100 p-4 rounded-lg">
+                <div class="text-3xl font-bold">10</div>
+                <div class="text-sm text-gray-700">Apr</div>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Youth Conference 2026</h4>
+                <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-clock mr-2 text-yellow-600"></i>All Day (3 days)</p>
+                <p class="text-gray-700">Inspiring messages, powerful worship, and life-changing encounters for our young people.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more events as needed -->
+        </div>
+        <div class="text-center mt-10">
+          <a href="events.html" class="inline-block bg-yellow-500 text-white px-10 py-4 rounded-full hover:bg-yellow-600 font-semibold">View Full Calendar</a>
+        </div>
+      </div>
+
     </div>
   </section>
-
-  <!-- DESCRIPTION -->
-  <section class="max-w-4xl mx-auto text-center mt-8 px-6">
-    <p class="text-slate-600">
-      These albums capture the joy, fellowship, worship, and outreach moments in our church community.
-      Click any album to explore photos and videos and relive the memories.
-    </p>
-  </section>
-
-  <!-- GALLERY GRID -->
-  <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- ALBUM CARD -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="h-48 w-full object-cover">
-      <div class="p-5">
-        <h3 class="text-xl font-semibold mb-2">Community Outreach</h3>
-        <p class="text-sm text-slate-600 mb-4">
-          Sharing the love of Christ through service projects and community support.
-        </p>
-        <div class="flex justify-between items-center text-sm text-slate-500">
-          <span>12 Photos • 2 Videos</span>
-          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">View Album</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ALBUM CARD -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334" class="h-48 w-full object-cover">
-      <div class="p-5">
-        <h3 class="text-xl font-semibold mb-2">Youth Retreat</h3>
-        <p class="text-sm text-slate-600 mb-4">
-          A weekend of worship, games, and spiritual growth for our young people.
-        </p>
-        <div class="flex justify-between items-center text-sm text-slate-500">
-          <span>15 Photos • 4 Videos</span>
-          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">View Album</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ALBUM CARD -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754" class="h-48 w-full object-cover">
-      <div class="p-5">
-        <h3 class="text-xl font-semibold mb-2">Christmas Celebration</h3>
-        <p class="text-sm text-slate-600 mb-4">
-          A joyful evening of carols, worship, and celebrating the birth of Christ.
-        </p>
-        <div class="flex justify-between items-center text-sm text-slate-500">
-          <span>10 Photos • 2 Videos</span>
-          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">View Album</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ALBUM CARD -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="h-48 w-full object-cover">
-      <div class="p-5">
-        <h3 class="text-xl font-semibold mb-2">Baptism Sunday</h3>
-        <p class="text-sm text-slate-600 mb-4">
-          Members publicly declaring their faith in a powerful baptism service.
-        </p>
-        <div class="flex justify-between items-center text-sm text-slate-500">
-          <span>8 Photos • 3 Videos</span>
-          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">View Album</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ALBUM CARD -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" class="h-48 w-full object-cover">
-      <div class="p-5">
-        <h3 class="text-xl font-semibold mb-2">Easter Worship</h3>
-        <p class="text-sm text-slate-600 mb-4">
-          Celebrating the resurrection with worship, praise, and fellowship.
-        </p>
-        <div class="flex justify-between items-center text-sm text-slate-500">
-          <span>11 Photos • 2 Videos</span>
-          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">View Album</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ALBUM CARD -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211" class="h-48 w-full object-cover">
-      <div class="p-5">
-        <h3 class="text-xl font-semibold mb-2">Mission Trip</h3>
-        <p class="text-sm text-slate-600 mb-4">
-          Serving communities and sharing hope during our international mission trip.
-        </p>
-        <div class="flex justify-between items-center text-sm text-slate-500">
-          <span>14 Photos • 3 Videos</span>
-          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600">View Album</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOAD MORE -->
-  <div class="text-center mb-16">
-    <button class="px-6 py-3 bg-white border rounded-lg hover:bg-slate-100">Load More Albums</button>
-  </div>
 
   <!-- Scroll to Top Button -->
   <button id="scrollTopBtn" class="fixed bottom-6 right-6 z-50 bg-blue-800 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-900 transition-all duration-300 opacity-0 invisible translate-y-4">
@@ -248,8 +196,6 @@
   <footer class="bg-blue-900 text-white">
     <div class="container mx-auto px-6 py-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-
-        <!-- Column 1 - About & Social -->
         <div>
           <h3 class="text-2xl font-bold mb-6">Evangelical Church of The Gambia</h3>
           <p class="text-gray-300 mb-6 leading-relaxed">
@@ -264,22 +210,20 @@
             </a>
           </div>
         </div>
-
-        <!-- Column 2 - Quick Links -->
         <div>
           <h4 class="text-xl font-bold mb-6">Quick Links</h4>
           <ul class="space-y-3 text-gray-300">
             <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
             <li><a href="about.html" class="hover:text-yellow-400 transition">About Us</a></li>
             <li><a href="ministries.html" class="hover:text-yellow-400 transition">Ministries</a></li>
+            <li><a href="events.html" class="hover:text-yellow-400 transition">Events</a></li>
+            <li><a href="sermons.html" class="hover:text-yellow-400 transition">Sermons</a></li>
             <li><a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a></li>
             <li><a href="get-involved.html" class="hover:text-yellow-400 transition">Get Involved</a></li>
             <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
             <li><a href="give.html" class="hover:text-yellow-400 transition">Give</a></li>
           </ul>
         </div>
-
-        <!-- Column 3 - Service Times -->
         <div>
           <h4 class="text-xl font-bold mb-6">Service Times</h4>
           <ul class="space-y-3 text-gray-300">
@@ -288,8 +232,6 @@
             <li>Wednesday Bible Study — 7:00 PM</li>
           </ul>
         </div>
-
-        <!-- Column 4 - Contact -->
         <div>
           <h4 class="text-xl font-bold mb-6">Contact</h4>
           <p class="text-gray-300">
@@ -299,10 +241,7 @@
             <a href="mailto:info@ecg.gm" class="hover:text-yellow-400">info@ecg.gm</a>
           </p>
         </div>
-
       </div>
-
-      <!-- Copyright -->
       <div class="mt-12 pt-8 border-t border-blue-700 text-center text-gray-400 text-sm">
         © 2026 Evangelical Church of The Gambia. All rights reserved.
       </div>
@@ -311,22 +250,16 @@
 
   <!-- Scripts -->
   <script>
-    // Mobile menu toggle
     document.getElementById('mobile-menu-button').addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-
-    // Mobile About Us submenu toggle
     document.getElementById('mobile-about-toggle').addEventListener('click', () => {
       const submenu = document.getElementById('mobile-about-submenu');
       const chevron = document.getElementById('mobile-about-chevron');
       submenu.classList.toggle('hidden');
       chevron.classList.toggle('rotate-180');
     });
-
-    // Scroll to Top Button
     const scrollTopBtn = document.getElementById('scrollTopBtn');
-
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
         scrollTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
@@ -336,7 +269,6 @@
         scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
       }
     });
-
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
