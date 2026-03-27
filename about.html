@@ -5,25 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Evangelical Church of The Gambia</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Top Bar: Phone + Email + Social Icons -->
   <div class="bg-blue-800 text-white py-3 px-4 text-sm">
-    <div class="container mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-6">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 xl:px-24 flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-6">
       <!-- Social Icons -->
       <div class="flex items-center gap-6 order-last sm:order-first">
-        <a href="https://www.facebook.com/yourchurchpage" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">
-          <i class="fab fa-facebook-f text-2xl"></i>
-        </a>
-        <a href="https://www.youtube.com/yourchurchchannel" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">
-          <i class="fab fa-youtube text-2xl"></i>
-        </a>
+        <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-facebook-f text-2xl"></i></a>
+        <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-youtube text-2xl"></i></a>
       </div>
       <!-- Contact Info -->
       <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 text-center sm:text-left">
-        <div><i class="fas fa-phone mr-2"></i>(123) 456-7890</div>
+        <div><i class="fas fa-phone mr-2"></i>(220) XXX-XXXX</div>
         <div>
           <i class="fas fa-envelope mr-2"></i>
           <a href="mailto:info@ecg.gm" class="hover:underline">info@ecg.gm</a>
@@ -32,25 +28,22 @@
     </div>
   </div>
 
-  <!-- Header – About Us highlighted -->
+  <!-- Header / Navbar - Exact match to Contact Us -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-5 flex justify-between items-center gap-10 lg:gap-16 xl:gap-20">
       <!-- Logo -->
       <div class="flex items-center min-w-0 flex-shrink-0">
-        <img
-          src="images/ecg-logo.jpg"
-          alt="Evangelical Church of The Gambia Logo"
-          class="w-12 h-12 md:w-14 md:h-14 object-contain mr-4 flex-shrink-0"
-        >
+        <img src="images/ecg-logo.jpg" alt="ECG Logo" class="w-12 h-12 md:w-14 md:h-14 object-contain mr-4 flex-shrink-0">
+        
       </div>
 
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex justify-end items-center space-x-8 xl:space-x-10 2xl:space-x-12 ml-auto">
-        <a href="index.html" class="hover:text-blue-600">Home</a>
-
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        
         <!-- About Us Dropdown -->
         <div class="relative group">
-          <button class="text-blue-800 font-bold flex items-center focus:outline-none">
+          <button class="hover:text-blue-600 flex items-center focus:outline-none font-medium">
             About Us <i class="fas fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
           </button>
           <div class="absolute left-0 mt-4 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
@@ -62,15 +55,15 @@
           </div>
         </div>
 
-        <a href="churches.html" class="hover:text-blue-600">Churches</a>
-        <a href="preaching-points.html" class="hover:text-blue-600">Preaching Points</a>
-        <a href="ministries.html" class="hover:text-blue-600">Ministries</a>
-        <a href="projects.html" class="hover:text-blue-600">Projects</a>
-        <a href="news-events.html" class="hover:text-blue-600">News & Events</a>
-        <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
-        <a href="get-involved.html" class="hover:text-blue-600">Get Involved</a>
-        <a href="contact.html" class="hover:text-blue-600">Contact</a>
-        <a href="give.html" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600 font-semibold">Give</a>
+        <a href="churches.html" class="hover:text-blue-600 transition">Churches</a>
+        <a href="preaching-points.html" class="hover:text-blue-600 transition">Preaching Points</a>
+        <a href="ministries.html" class="hover:text-blue-600 transition">Ministries</a>
+        <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+        <a href="gallery.html" class="hover:text-blue-600 transition">Gallery</a>
+        <a href="get-involved.html" class="hover:text-blue-600 transition">Get Involved</a>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+        
+        <a href="give.html" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600 font-semibold transition">Give</a>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -83,10 +76,10 @@
     <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
       <nav class="px-6 py-6 space-y-4">
         <a href="index.html" class="block text-lg hover:text-blue-600">Home</a>
-
+        
         <!-- Mobile About Us Accordion -->
         <div>
-          <button id="mobile-about-toggle" class="flex justify-between w-full text-lg text-blue-800 font-bold py-2">
+          <button id="mobile-about-toggle" class="flex justify-between w-full text-lg hover:text-blue-600 py-2">
             About Us <i class="fas fa-chevron-down transition-transform" id="mobile-about-chevron"></i>
           </button>
           <div id="mobile-about-submenu" class="hidden pl-6 space-y-3 mt-2">
@@ -97,158 +90,75 @@
             <a href="faith.html" class="block hover:text-blue-600">Statement of Faith</a>
           </div>
         </div>
-
+        
         <a href="churches.html" class="block text-lg hover:text-blue-600">Churches</a>
         <a href="preaching-points.html" class="block text-lg hover:text-blue-600">Preaching Points</a>
         <a href="ministries.html" class="block text-lg hover:text-blue-600">Ministries</a>
         <a href="projects.html" class="block text-lg hover:text-blue-600">Projects</a>
-        <a href="news-events.html" class="block text-lg hover:text-blue-600">News & Events</a>
         <a href="gallery.html" class="block text-lg hover:text-blue-600">Gallery</a>
         <a href="get-involved.html" class="block text-lg hover:text-blue-600">Get Involved</a>
         <a href="contact.html" class="block text-lg hover:text-blue-600">Contact</a>
+        
         <a href="give.html" class="block bg-yellow-500 text-white px-6 py-4 rounded-full text-center hover:bg-yellow-600 font-semibold">Give</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative min-h-96 md:min-h-screen bg-cover bg-center flex items-center" style="background-image: url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+  <!-- Hero Section -->
+  <section class="relative h-72 md:h-[450px] bg-cover bg-center" 
+           style="background-image: url('https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg');">
     <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
-    <div class="relative container mx-auto px-6 text-center text-white">
-      <h2 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-4">About Us</h2>
-      <p class="text-xl sm:text-2xl md:text-3xl max-w-4xl mx-auto">A community of faith, love, and service</p>
+    <div class="relative container mx-auto h-full flex flex-col justify-center items-center text-white text-center px-4">
+      <h1 class="text-5xl md:text-7xl font-bold">About Us</h1>
+      <p class="text-xl md:text-3xl mt-4">A community of faith, love, and service</p>
     </div>
   </section>
 
   <!-- Main Content -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6 max-w-5xl">
-      <div class="prose prose-lg mx-auto text-gray-700">
-        <h2 class="text-4xl font-bold text-blue-800 mb-8 text-center">Who We Are</h2>
-        <p class="mb-6">
-          Our Church is a vibrant, Bible-believing community dedicated to worshiping God, growing in faith, and serving others. We welcome people from all walks of life to experience the love of Christ in a warm and accepting environment.
-        </p>
-        <p class="mb-6">
-          Founded in love and guided by Scripture, we strive to be a place where individuals and families can encounter God, find belonging, and be equipped to live out their faith every day. Our diverse congregation reflects the beauty of God's kingdom—people of different ages, backgrounds, and cultures united in Christ.
-        </p>
-        <h3 class="text-3xl font-bold text-blue-800 mt-12 mb-6">What We Believe</h3>
-        <p class="mb-6">
-          We hold firmly to the core truths of the Christian faith as revealed in the Bible. Our beliefs are summarized in our <a href="faith.html" class="text-blue-600 hover:underline">Statement of Faith</a>, and our purpose is expressed through our <a href="vision-mission.html" class="text-blue-600 hover:underline">Vision & Mission</a>.
-        </p>
-        <h3 class="text-3xl font-bold text-blue-800 mt-12 mb-6">Our Story</h3>
-        <p class="mb-6">
-          Learn more about how God has faithfully led us through the years in our <a href="history.html" class="text-blue-600 hover:underline">History</a> page.
-        </p>
-        <div class="text-center mt-12">
-          <a href="events.html" class="inline-block bg-yellow-500 text-white px-10 py-5 rounded-full hover:bg-yellow-600 font-bold text-xl shadow-lg">
-            Join Us This Sunday
-          </a>
-        </div>
+  <section class="py-16 max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-blue-800 mb-8 text-center">Who We Are</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12 text-center">
+      The Evangelical Church of The Gambia (ECG) is a vibrant, Bible-believing church committed to worshiping God, 
+      making disciples, and serving our communities with the love of Christ.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-12 mt-12">
+      <div>
+        <h3 class="text-3xl font-bold text-blue-800 mb-4">Our Mission</h3>
+        <p class="text-gray-600">To glorify God by proclaiming the Gospel, nurturing believers, and transforming communities through the power of the Holy Spirit.</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold text-blue-800 mb-4">Our Vision</h3>
+        <p class="text-gray-600">To be a Spirit-filled church that reaches every corner of The Gambia and beyond with the saving knowledge of Jesus Christ.</p>
       </div>
     </div>
+
+    <h3 class="text-3xl font-bold text-blue-800 mt-16 mb-6 text-center">Our Story</h3>
+    <p class="text-gray-600 leading-relaxed text-center">
+      Founded with a passion for genuine worship and biblical teaching, ECG has grown from a small fellowship into a network 
+      of churches and preaching points across the country. Through the years, God has faithfully guided us in ministry, outreach, 
+      education, and community development.
+    </p>
   </section>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn" class="fixed bottom-6 right-6 z-50 bg-blue-800 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-900 transition-all duration-300 opacity-0 invisible translate-y-4">
-    <i class="fas fa-arrow-up text-xl"></i>
-  </button>
-
-  <!-- Mega Footer - 4 Columns -->
-  <footer class="bg-blue-900 text-white">
-    <div class="container mx-auto px-6 py-16">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-
-        <!-- Column 1 - About & Social -->
-        <div>
-          <h3 class="text-2xl font-bold mb-6">Evangelical Church of The Gambia</h3>
-          <p class="text-gray-300 mb-6 leading-relaxed">
-            A loving community dedicated to worship, growth, and serving others with the love of Christ.
-          </p>
-          <div class="flex gap-5 mb-8">
-            <a href="https://www.facebook.com/yourchurchpage" target="_blank" class="text-2xl hover:text-yellow-400 transition">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.youtube.com/yourchurchchannel" target="_blank" class="text-2xl hover:text-yellow-400 transition">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Column 2 - Quick Links -->
-        <div>
-          <h4 class="text-xl font-bold mb-6">Quick Links</h4>
-          <ul class="space-y-3 text-gray-300">
-            <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
-            <li><a href="about.html" class="hover:text-yellow-400 transition">About Us</a></li>
-            <li><a href="ministries.html" class="hover:text-yellow-400 transition">Ministries</a></li>
-            <li><a href="news-events.html" class="hover:text-yellow-400 transition">News & Events</a></li>
-            <li><a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a></li>
-            <li><a href="get-involved.html" class="hover:text-yellow-400 transition">Get Involved</a></li>
-            <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
-            <li><a href="give.html" class="hover:text-yellow-400 transition">Give</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3 - Service Times -->
-        <div>
-          <h4 class="text-xl font-bold mb-6">Service Times</h4>
-          <ul class="space-y-3 text-gray-300">
-            <li>Sunday Worship — 9:00 AM</li>
-            <li>Sunday Worship — 11:00 AM</li>
-            <li>Wednesday Bible Study — 7:00 PM</li>
-          </ul>
-        </div>
-
-        <!-- Column 4 - Contact -->
-        <div>
-          <h4 class="text-xl font-bold mb-6">Contact</h4>
-          <p class="text-gray-300">
-            123 Church Street<br>
-            City, State 12345<br><br>
-            <a href="tel:+1234567890" class="hover:text-yellow-400">(123) 456-7890</a><br>
-            <a href="mailto:info@ecg.gm" class="hover:text-yellow-400">info@ecg.gm</a>
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Copyright -->
-      <div class="mt-12 pt-8 border-t border-blue-700 text-center text-gray-400 text-sm">
-        © 2026 Evangelical Church of The Gambia. All rights reserved.
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-12 text-center">
+    <p>© 2026 Evangelical Church of The Gambia (ECG)</p>
+    <p class="mt-4 text-sm">"May the Lord establish the work of our hands." – Psalm 90:17</p>
   </footer>
 
-  <!-- Scripts -->
   <script>
-    // Mobile menu toggle
+    // Mobile Menu Toggle
     document.getElementById('mobile-menu-button').addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
 
-    // Mobile About Us submenu toggle
+    // Mobile About Us Submenu Toggle
     document.getElementById('mobile-about-toggle').addEventListener('click', () => {
       const submenu = document.getElementById('mobile-about-submenu');
       const chevron = document.getElementById('mobile-about-chevron');
       submenu.classList.toggle('hidden');
       chevron.classList.toggle('rotate-180');
-    });
-
-    // Scroll to Top Button
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        scrollTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
-        scrollTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
-      } else {
-        scrollTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
-        scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
-      }
-    });
-
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
